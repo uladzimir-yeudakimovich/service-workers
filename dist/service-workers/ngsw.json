@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584309971449,
+  "timestamp": 1584311263406,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -20,7 +20,8 @@
         "/styles.09e2c710755c8867a460.css"
       ],
       "patterns": [
-        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Oswald:300,700"
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Oswald:300,700",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/.*"
       ]
     },
     {
@@ -40,7 +41,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "service-workers",
+      "patterns": [
+        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/posts"
+      ],
+      "strategy": "freshness",
+      "maxSize": 5,
+      "maxAge": 21600000,
+      "timeoutMs": 10000,
+      "version": 2
+    }
+  ],
   "hashTable": {
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
