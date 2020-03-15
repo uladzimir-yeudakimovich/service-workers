@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584308369855,
+  "timestamp": 1584309971449,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -19,7 +19,9 @@
         "/runtime-es5.c5fa8325f89fc516600b.js",
         "/styles.09e2c710755c8867a460.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Oswald:300,700"
+      ]
     },
     {
       "name": "assets",
